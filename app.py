@@ -79,9 +79,5 @@ async def test_connect(sid, environ):
 def test_disconnect(sid):
     print('Client disconnected')
 
-
-app.static('/static', './static')
-
-
 if __name__ == '__main__':
     app.run(port=8080)
