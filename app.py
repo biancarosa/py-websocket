@@ -86,4 +86,4 @@ def test_disconnect(sid):
     print('Client disconnected')
 
 if __name__ == '__main__':
-    app.run(port=os.getenv('PORT', 8080))
+    app.run(port=int(os.getenv('PORT', 8080)))
