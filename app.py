@@ -28,8 +28,7 @@ def before_server_start(sanic, loop):
 
 @app.route('/')
 async def index(request):
-    with open('app.html') as f:
-        return html(f.read())
+    return html('Hello World')
 
 
 @sio.on('my event', namespace='/test')
